@@ -1,16 +1,19 @@
 import os
-# attention chemin à adapter à votre ordinateur!
-chemin = r"C:\Users\ilyas\pythonCode\bts\chp9\monDossier\korri.txt"
+# import subprocess
+
+# Attention : adaptez le chemin à votre ordinateur
+chemin = r"/Users/ikorri/codage/python/python2023Exos/korri.txt"
 
 saisie = ""
-while not saisie == "q":
-    with open(chemin ,"a") as f:
-        saisie = input("\nSaisir :> ")
-        contenu = f.write(saisie + "\n")
+while saisie.lower() != "q":
+    saisie = input("\nSaisir :> ")
+    if saisie.lower() != "q":
+        with open(chemin, "a") as f:
+            f.write(saisie + "\n")
 
-
-    with open(chemin ,"r") as f:
+    with open(chemin, "r") as f:
         contenu = f.read()
         print(contenu)
-os.startfile(r"C:\Users\ilyas\pythonCode\bts\chp9\monDossier\korri.txt")
+# os.startfile(r"/Users/ikorri/codage/python/python2023Exos/korri.txt")
+# subprocess.run(["open", chemin])
     
