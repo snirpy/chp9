@@ -1,9 +1,9 @@
 import os
 
 # attention chemin à adapter à votre ordinateur!
-chemin = r"C:\Users\ilyas\pythonCode\bts\chp9"
+chemin = r"/Users/ikorri/codage/python/python2023Exos"
 
-liste_dossier  = ["C", "C++", "Python"]
+liste_dossier  = ["C++", "Python","Javascript"]
 
 for element in liste_dossier:
     chemin_dossier = os.path.join(chemin, "monDossier", element )
